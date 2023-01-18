@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>ThreeanCompany</title>
+  <!-- MDB icon -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+  <style>
+    html,
+    body,
+    header,
+    .view {
+      height: 95%;
+    }
+
+    @media (max-width: 740px) {
+
+      html,
+      body,
+      header,
+      .view {
+        height: 100vh;
+      }
+    }
+
+    .top-nav-collapse {
+      background-color: #128686 !important;
+    }
+
+    .navbar:not(.top-nav-collapse) {
+      background: transparent !important;
+    }
+
+    @media (max-width: 991px) {
+      .navbar:not(.top-nav-collapse) {
+        background: #128686 !important;
+      }
+    }
+
+    .rgba-gradient {
+      background: linear-gradient(45deg, rgba(41, 2, 59, 0.6), rgba(6, 6, 7, 0.69) 100%);
+    }
+
+    .navbar .nav-link {
+      color: #fff !important;
+    }
+
+    
+
+    .card-header {
+      background: linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%);
+      text-align: center;
+      font-size: 20px !important;
+    }
+
+    .timeline {
+      position: relative;
+      list-style: none;
+      padding: 1rem 0;
+      margin: 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      margin-left: -1px;
+      background-color: #50a1ff;
+    }
+
+    .timeline-element {
+      position: relative;
+      width: 50%;
+      padding: 1rem 0;
+      padding-right: 2.5rem;
+      text-align: right;
+    }
+
+    .timeline-element::before {
+      content: '';
+      position: absolute;
+      right: -8px;
+      top: 1.35rem;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 2px solid #50a1ff;
+      background-color: #fff;
+    }
+
+    .timeline-element:nth-child(even)::before {
+      right: auto;
+      left: -8px;
+    }
+
+    .timeline-element:nth-child(even) {
+      margin-left: 50%;
+      padding-left: 2.5rem;
+      padding-right: 0;
+      text-align: left;
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline::before {
+        left: 8px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline-element {
+        width: 100%;
+        text-align: left;
+        padding-left: 2.5rem;
+        padding-right: 0;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline-element::before {
+        top: 1.25rem;
+        left: 1px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline-element:nth-child(even) {
+        margin-left: 0rem;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline-element {
+        width: 100%;
+        text-align: left;
+        padding-left: 2.5rem;
+        padding-right: 0;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline-element:nth-child(even)::before {
+        left: 1px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .timeline-element::before {
+        top: 1.25rem;
+      }
+    }
+
+    .fas {
+      color: #340b38;
+    }
+  </style>
+
+
+
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+
+      <div class="container">
+
+        <a class="navbar-brand" href="#">ThreeanCompany</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav mr-auto smooth-scroll">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us" data-offset="90">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="booking.html" data-offset="90">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html" data-offset="90">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" data-offset="90">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="privacy.html" data-offset="90">Privacy Policy</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="faqs.html" data-offset="30">Faqs</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html"
+                data-offset="90">Contact Us</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="reviews.html">Reviews </a>
+            </li>
+            <li class="nav-item">
+              <!-- <a class="nav-link" href="ourteam.html">Team </a> -->
+            </li>
+          </ul>
+
+          <!-- Social Icon  -->
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="fab fa-facebook-f light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="fab fa-twitter light-green-text-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="fab fa-instagram light-green-text-2"></i>
+              </a>
+            </li>
+
+            
+          </ul>
+
+        </div>
+
+      </div>
+
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Full Page Intro -->
+    <div id="intro-section" class="view">
+
+      <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay
+        muted loop>
+<<<<<<< HEAD
+
+        <source src="img/Purple Modern Thanks for Watching Youtube Outro.mp4" type="video/mp4">
+
+=======
+        <source src="img/Untitled design.mp4" type="video/mp4">
+      </video>
+>>>>>>> parent of de0d434 (index page update)
+
+      <!-- Mask & flexbox options-->
+      <div class="mask rgba-gradient d-flex justify-content-center align-items-center">
+
+        <!-- Content -->
+        <div class="container px-md-3 px-sm-0">
+
+          <!--Grid row-->
+          <div class="row wow fadeIn">
+
+            <!--Grid column-->
+            <div class="col-md-12 mb-4 white-text text-center wow fadeIn">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h4 class="display-5  white-text mb-0 pt-md-5 pt-5" style="font-family:  cursive; " > <marquee>........Welcome To ThreeanCompany...........</marquee></h4>
+              <hr class="hr-light my-4 w-75">
+            </div>
+            <!--Grid column-->
+
+          </div>
+          <!--Grid row-->
+
+        </div>
+        <!-- Content -->
+
+      </div>
+      <!-- Mask & flexbox options-->
+
+    </div>
+    <!-- Full Page Intro -->
+
+
+
+</head>
+
+<body>
+
+  <div class="container my-4" id="about-us">
+    <!--Section: Content-->
+    <section class="dark-grey-text" id="test1">
+
+      <!-- Section heading -->
+      
+          <h4 class="text-center font-weight-bold"><i class="fas fa-ribbon"></i>About Us<i class="fas fa-ribbon"></i></h4>
+      <!-- Section description -->
+      <p class="lead text-center w-responsive mx-auto text-muted mt-4 pt-2 mb-5" >
+        <span style="font-size: 17px;">3AN car rentals is a company incorporated in Ghana which provide reliable
+           vehicles for all your travels within Ghana. We are rental company with four years of experience in car 
+           rental business focusing on serving a myriad of clients from individuals to corporates.
+            We are experience with dedicated personnel who respond to the needs of client. We aspire to provide current model 
+            vehicles in excellent condition both visually and mechanically with all vehicles in our current fleet equipped with radio / CD, 
+          fully air-conditioned and seat belts.
+        </span>
+      </p>
+
+    </section>
+  </div>
+
+
+  <div class="container my-5">
+
+
+    <!--Section: Content-->
+    <section class="dark-grey-text">
+      <!--First row-->
+      <div class="row">
+
+        <!--First column-->
+        <div class="col-md-6 mb-4">
+
+          <!-- Card -->
+          <a href="#!" class="card hoverable">
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <div class="media">
+                <div class="media-body">
+                  <i class="fas-light fa-diploma"></i>
+                  <h5 class="dark-grey-text mb-3 text-center font-weight-bold">Our Vision</h5>
+                  <p class="font-weight-light text-muted mb-0">we aspire to be the leading car rental company providing excellence services to range of customers in a safe and comforting manner</p>
+                </div>
+              </div>
+
+            </div>
+
+          </a>
+          <!-- Card -->
+
+        </div>
+        <!--First column-->
+
+        <!--Second column-->
+        <div class="col-md-6 mb-4">
+
+          <!-- Card -->
+          <a href="#!" class="card hoverable">
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="dark-grey-text mb-3 text-center font-weight-bold">Our Mission</h5>
+                  <p class="font-weight-light text-muted mb-0">Is to provide quality transport services using current and well maintained vehicles, experienced and committed staff to our clients.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </a>
+          <!-- Card -->
+          <!-- Card -->
+
+        </div>
+        <!--Second column-->
+
+      </div>
+      <!--First row-->
+
+    </section>
+
+
+  </div>
+
+  <div class="container-fluid z-depth-1 my-5 py-5 px-4 px-lg-0" id="services">
+    <!-- Section -->
+    <section >
+
+      <h4 class="text-center font-weight-bold" >Our Services</h4>
+      <h6 class="text-center text-muted">3AN car rental provide a wide range of transportation services across the length and breath of Ghana. Our services include.</h6>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <ol class="timeline">
+            
+
+            <li class="timeline-element">
+              <div class="card">
+                <div class="card-header white">
+                  <h3 class="text-center" data-aos="fade-right"><span style="font-size: 25px;">#1 Heading for service</span></h3>
+                </div>
+                <div class="card-body">
+                  <p class="lead text-right w-responsive mx-auto text-muted mt-4 pt-2 mb-5">
+                    <span style="font-size: 15px;">We provide luxurious Toyota land cruiser vehicles for clients such as NGOs or individuals for a short period of time embarking on field trips within Ghana.  This comes with an experience dedicated driver, free Wi-Fi, and 500ml bottled water for guest
+                     </span>
+                  </p>
+                  <img src="img/tc.jpg" class="img-fluid" alt="Sample project image" />
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline-element">
+              <div class="card">
+                <div class="card-header white">
+                  <h3 class="text-center"><span style="font-size: 25px;">#2 Heading for service</span></h3>
+                </div>
+                <div class="card-body">
+                  <p class="lead text-right w-responsive mx-auto text-muted mt-4 pt-2 mb-5">
+                    <span style="font-size: 15px;">	We provide mini-van or coaster bus services to organizations, groups or individuals embarking on trips, business, pleasure or ceremonial activities within Ghana</span>
+                  </p>
+                  <img src="img/mini.jpg" class="img-fluid" alt="Sample project image" />
+                </div>
+              </div>
+            </li>
+
+             <li class="timeline-element">
+              <div class="card">
+                <div class="card-header white">
+                  <h3 class="text-center"><span style="font-size: 25px;">#3 Heading for service</span></h3>
+                </div>
+                <div class="card-body">
+                  <p class="lead text-right w-responsive mx-auto text-muted mt-4 pt-2 mb-5">
+                    <span style="font-size: 15px;">	We provide luxurious vehicles for weddings, funerals, meetings.</span>
+                  </p>
+                  <img src="./img/lx.jpg" class="img-fluid" alt="Sample project image" />
+                </div>
+              </div>
+            </li>
+
+          </ol>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- Section -->
+  </div>
+  <!-- <div class="container-fluid mt-3 mb-5">
+
+   
+    <section
+      style="background-image: url('img/IMG_5171.JPG'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="mask rgba-black-strong py-5">
+        <div class="container text-center my-5">
+          <p class="lead text-center white-text pt-2 mb-5">
+            “Beyond limit” projects is exactly what the company is in existence for since the services rendered does not limit to just management of events but extends to a healthy interpersonal relation with our customers through dedication, hospitality and a touch of professionalism that leaves them wanting more.
+          </p>
+          <hr>
+        </div>
+      </div>
+
+    </section>
+    
+
+
+  </div> -->
+
+
+  <div class="container py-5 my-5">
+    <section class="p-md-3 mx-md-5 text-center text-lg-left">
+      <h2 class="text-center mx-auto font-weight-bold mb-5 pb-2">Why  Us?</h2>
+      <div class="row">
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center">
+            <div class="card-header white">
+              <h4 class="h5  my-1" style="color:#fff;">Lorem</h4>
+            </div>
+            <div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <br>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.  accusantium quis doloremque explicabo.
+                <br>
+                <br>
+              </p>
+            </div>
+            <div class="card-footer white"> </div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center blue lighten-5">
+            <div class="card-header">
+              <h4 class="h5  my-1" style="color:#fff;">Lorem</h4>
+            </div>
+            <div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maiores repudiandae est quod nobis quae itaque quis ipsa odit? Doloremque vel odio animi aliquam mollitia fuga iusto magni inventore eveniet!
+              </p>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center">
+            <div class="card-header white">
+              <h4 class="h5  my-1" style="color:#fff;">Lorem</h4>
+            </div>
+            <div>
+
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate aut, fugiat itaque voluptatum quidem ad distinctio possimus perspiciatis sed modi voluptates earum doloremque dicta obcaecati ducimus amet beatae accusantium facilis.
+              </p>
+            </div>
+            <div class="card-footer white"> </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+
+
+  
+  <div class="position-relative">
+    <svg data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+      class="svg" style=" height: 150px; width: 100%; fill: rgb(17, 117, 112); opacity: 0.8; transform: rotateX(200deg);">
+      <path
+        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.77,72,985.66,100.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+      </path>
+    </svg>
+  </div>
+  
+  
+
+
+  <footer class="page-footer font-small darken-3" style="background-color: #128686;">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+      <a href="#">ThreeanCompany</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript">
+    $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function () {
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < 4; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+  </script>
+
+</body>
+
+</html>
